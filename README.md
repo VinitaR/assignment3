@@ -1,4 +1,4 @@
-# Assignment 4: Self-Critique Loop RAG Pipeline
+# Assignment 3: Self-Critique Loop RAG Pipeline
 
 This project implements a Retrieval-Augmented Generation (RAG) pipeline with a self-critique loop for answering software engineering questions using a provided knowledge base.
 
