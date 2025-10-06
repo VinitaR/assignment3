@@ -9,7 +9,7 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline with a s
 - **index_kb.py**  
   Loads `self_critique_loop_dataset.json`, computes embeddings using Azure OpenAI, and indexes records into a FAISS vector database.
 
-- **agentic_rag_simplified.py**  
+- **rag_agent.py**  
   Implements the agentic RAG pipeline with four key nodes:
     - `retrieve_kb`: retrieves the top-5 relevant KB snippets for the user question
     - `generate_answer`: generates an initial answer, citing snippets by `doc_id`
@@ -54,9 +54,9 @@ This will create a local faiss_kb index file.
 2. Run the Agentic RAG Pipeline
 Process sample questions, retrieve context, generate, critique, and refine answers:
 ```bash
-python agentic_rag_simplified.py
+python rag_agent.py
 ```
-You can edit or add user questions in the sample_questions list in agentic_rag_simplified.py.
+You can edit or add user questions in the sample_questions list in rag_agent.py.
 
 ## Output
 
